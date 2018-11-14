@@ -1,13 +1,24 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img class="logo" src="./assets/imgs/logo_1.jpeg">
     <router-view/>
+    <!-- <el-button @click="startHacking">Start</el-button> -->
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  methods: {
+    // startHacking () {
+    //   this.$notify({
+    //     title: 'It works!',
+    //     type: 'success',
+    //     message: 'We\'ve laid the ground work for you. It\'s time for you to build something epic!',
+    //     duration: 5000
+    //   })
+    // }
+  }
 }
 </script>
 
@@ -20,4 +31,11 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+.logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+}
+
 </style>

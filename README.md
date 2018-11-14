@@ -1,6 +1,6 @@
 # library-admin
 
-> library administrator operator pGES
+> library administrator operator pages
 
 ## Build Setup
 

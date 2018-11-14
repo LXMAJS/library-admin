@@ -1,14 +1,15 @@
 <template>
   <div class="login">
+    <h1>{{ msg }}</h1>
     <el-form ref="form" :model="form" label-width="80px">
       <el-form-item label="用户名">
         <el-input v-model="form.username"></el-input>
       </el-form-item>
       <el-form-item label="密码">
-        <el-input v-model="form.pssword"></el-input>
+        <el-input v-model="form.username"></el-input>
       </el-form-item>
       <el-form-item>
-        <el-button type="primary" @click="onSubmit">登录</el-button>
+        <el-button type="primary" @click="onSubmit">立即创建</el-button>
       </el-form-item>
     </el-form>
   </div>
@@ -16,26 +17,28 @@
 
 <script>
 export default {
-  name: 'login',
-  data () {
+  name: "login",
+  data (){
     return {
+      msg: "Welcome",
       form: {
-          username: '',
-          password: ''
-        }
+        username: '',
+        password: ''
+      }
     };
   },
-  methods:{
+  methods: {
     onSubmit (){
       console.log("submit");
     }
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+h1,
+h2 {
   font-weight: normal;
 }
 ul {
