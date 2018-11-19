@@ -15,6 +15,8 @@
 </template>
 
 <script>
+import api from "../utils/api.js"
+
 export default {
   name: 'login',
   data () {
@@ -27,6 +29,15 @@ export default {
   },
   methods:{
     onSubmit (){
+      api.post('http://127.0.0.1:8082/library' + "/user/login",
+        {
+          "username": "111",
+          "password": "hhh"
+        },
+        function(res){
+          console.log(res);
+        }
+      )
       console.log("submit");
     }
   }
