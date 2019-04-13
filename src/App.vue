@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img class="logo" src="./assets/imgs/logo_1.jpeg">
     <router-view/>
     <!-- <el-button @click="startHacking">Start</el-button> -->
   </div>
