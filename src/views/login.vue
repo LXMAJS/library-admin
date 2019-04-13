@@ -20,7 +20,7 @@ export default {
   methods: {
     submit() {
       let data = {
-        username: "123",
+        username: "1233dd3",
         password: "2jnl"
       };
       login(data)
@@ -43,20 +43,5 @@ export default {
   background: url("../assets/background/bg1.png") no-repeat center 0px;
   background-position: center 0;
   background-size: cover;
-}
-h1,
-h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
 }
 </style>
