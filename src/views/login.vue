@@ -20,8 +20,8 @@ export default {
   methods: {
     submit() {
       let data = {
-        username: "1233dd3",
-        password: "2jnl"
+        username: "lxmajs",
+        password: "0"
       };
       login(data)
         .then(res => {
