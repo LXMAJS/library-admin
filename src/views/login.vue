@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    <button v-on:click="submit">点我</button>
+    <div class="login-form"></div>
   </div>
 </template>
 
@@ -23,10 +23,9 @@ export default {
         username: "lxmajs",
         password: "0"
       };
-      login(data)
-        .then(res => {
-          console.log(res);
-        });
+      login(data).then(res => {
+        console.log(res);
+      });
       console.log("submit");
     }
   }
@@ -36,12 +35,24 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .login {
-  margin: 0;
-  padding: 0;
+  position: absolute;
+  margin-top: 0px;
+  background: url("../assets/background/bg1.png") no-repeat;
   height: 100%;
-  widows: 100%;
-  background: url("../assets/background/bg1.png") no-repeat center 0px;
-  background-position: center 0;
+  width: 100%;
+  overflow: hidden;
   background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.login-form {
+  width: 350px;
+  height: 300px;
+  background: #e1e1e1;
+  opacity: 0.5;
+  margin-top: 12%;
 }
 </style>

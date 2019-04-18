@@ -2,12 +2,17 @@
   <div id="app">
     <router-view/>
     <!-- <el-button @click="startHacking">Start</el-button> -->
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
+import footer from "@/components/footer";
 export default {
-  name: 'App',
+  name: "App",
+  components: {
+    Footer: footer
+  },
   methods: {
     // startHacking () {
     //   this.$notify({
@@ -18,23 +23,31 @@ export default {
     //   })
     // }
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  width: 150px;
-  height: 150px;
-  border-radius: 75px;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
 </style>
