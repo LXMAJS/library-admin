@@ -1,9 +1,10 @@
 <template>
   <footer>
-    Made By LXMAJS
+    <a>Made By </a>
     <svg class="icon" aria-hidden="true">
       <use xlink:href="#icon-xiaolian"></use>
     </svg>
+    <a> LXMAJS</a>
   </footer>
 </template>
 
@@ -22,6 +23,8 @@ footer {
   text-align: center;
   font-size: 12px;
   color: #eee;
+  cursor: default;
+  user-select: none;
 }
 </style>
 
