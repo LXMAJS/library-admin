@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import index from '@/views/index'
 import login from '@/views/login'
 import timer from '@/views/timer'
 
@@ -9,8 +10,8 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'default',
-      component: login
+      name: 'index',
+      component: index
     },
     {
       path: '/login',
