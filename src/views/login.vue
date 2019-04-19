@@ -1,6 +1,7 @@
 <template>
   <div class="login">
-    <div class="login-form"></div>
+    <div class="login-form">
+    </div>
   </div>
 </template>
 
@@ -47,12 +48,10 @@ export default {
   justify-content: center;
   flex-direction: row;
 }
-
 .login-form {
   width: 350px;
   height: 300px;
-  background: #e1e1e1;
-  opacity: 0.5;
+  background: rgba(200, 200, 200, 0.3);
   margin-top: 12%;
 }
 </style>

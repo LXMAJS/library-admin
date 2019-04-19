@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import login from '@/views/login'
+import timer from '@/views/timer'
 
 Vue.use(Router)
 
@@ -15,6 +16,11 @@ const router = new Router({
       path: '/login',
       name: 'login',
       component: login
+    },
+    {
+      path: '/timer',
+      name: 'timer',
+      component: timer
     }
   ]
 })
